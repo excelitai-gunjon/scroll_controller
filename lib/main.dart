@@ -12,7 +12,7 @@ Future main() async {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatelessWidget{
   static final String title = 'Scroll To Top & Bottom';
 
   @override
@@ -90,11 +90,11 @@ class _MainPageState extends State<MainPage> {
       items: [
         BottomNavigationBarItem(
           icon: Icon(Icons.arrow_upward),
-          title: Text('Scroll To Top', style: style),
+          label:'Scroll To Top',
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.arrow_downward),
-          title: Text('Scroll To Bottom', style: style),
+          label:'Scroll To Bottom',
         ),
       ],
       onTap: (int index) {
